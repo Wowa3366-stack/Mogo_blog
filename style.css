@@ -15,7 +15,9 @@ body {
     color: var(--text-color);
     background-color: var(--background-color);
 }
-
+header{
+padding-top: 16px;
+}
 .container {
     width: 1230px;
     padding: 0 15px;
@@ -28,7 +30,17 @@ body {
     font-size: 30px;
     color: var(--accent-color);
 }
+.header_list{
+display: flex;
+gap: 55px;
 
+}
+.header_flex{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+}
 .benefits_title, 
 .team_title{
     margin-bottom: 20px;
