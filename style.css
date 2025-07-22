@@ -48,7 +48,6 @@ header {
   margin-top: 10px;
   margin-bottom: 10px;
   display: inline-block;
-  transition: color 0.3s ease;
 }
 
 .header_item::after {
