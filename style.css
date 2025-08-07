@@ -217,6 +217,7 @@ header {
 display: flex;
 align-items: center;
 justify-content: center;
+margin-top: 20px;
 gap: 12px;
 }
 .social_item{
@@ -225,6 +226,7 @@ align-items: center;
 justify-content: center;
 height: 44px;
 width: 44px;
+cursor: pointer;
 background-color: var(--accent-color);
 color: var(--background-color);
 border-radius: 50%;
@@ -288,8 +290,11 @@ fill: currentColor;
   font-size: 14px;
   color: #595959;
 }
-
 .footer_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   padding: 11px 38px;
   background-color: var(--accent-color);
   color: #ffffff;
@@ -303,3 +308,13 @@ fill: currentColor;
 .footer_button:hover {
   background-color: #056857;
 }
+
+.footer_button_icon{
+fill: blue;
+height: 22px;
+width: 22px;
+}
+.footer_button:hover .footer_button_icon {
+fill: white;
+}
+
