@@ -194,6 +194,7 @@ header {
 .team_item {
   flex-basis: calc((100% - 60px) / 3);
 }
+
 .team_name {
   font-family: var(--font-family);
   font-weight: 400;
@@ -211,6 +212,31 @@ header {
   font-size: 15px;
   text-align: center;
   color: #595959;
+}
+.social_list{
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 12px;
+}
+.social_item{
+display: flex;
+align-items: center;
+justify-content: center;
+height: 44px;
+width: 44px;
+background-color: var(--accent-color);
+color: var(--background-color);
+border-radius: 50%;
+}
+.social_item:hover{
+color: var(--text-color);
+background-color: var(--alert-text-color);
+}
+.social_icon{
+width: 20px;
+height: 20px;
+fill: currentColor;
 }
 .footer {
   padding-top: 10px;
