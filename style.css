@@ -193,8 +193,45 @@ header {
 
 .team_item {
   flex-basis: calc((100% - 60px) / 3);
+  position: relative;
 }
 
+/* .div_box:hover::before {
+  transform: translateX(0);
+  display: block;
+  content: "";
+  width: 100%;
+  height: 74%;
+  background-color: rgba(255, 255, 0, 0.521);
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.div_box::before {
+  transform: translateX(-100%);
+  transition: transform 500ms;
+} */
+
+.div_box {
+  position: relative;
+  overflow: hidden;
+}
+.overlay {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 0, 0.521);
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  transition: transform 500ms;
+}
+.div_box:hover .overlay{
+transform: translate(0);
+}
 .team_name {
   font-family: var(--font-family);
   font-weight: 400;
@@ -213,32 +250,32 @@ header {
   text-align: center;
   color: #595959;
 }
-.social_list{
-display: flex;
-align-items: center;
-justify-content: center;
-margin-top: 20px;
-gap: 12px;
+.social_list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 12px;
 }
-.social_item{
-display: flex;
-align-items: center;
-justify-content: center;
-height: 44px;
-width: 44px;
-cursor: pointer;
-background-color: var(--accent-color);
-color: var(--background-color);
-border-radius: 50%;
+.social_item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  width: 44px;
+  cursor: pointer;
+  background-color: var(--accent-color);
+  color: var(--background-color);
+  border-radius: 50%;
 }
-.social_item:hover{
-color: var(--text-color);
-background-color: var(--alert-text-color);
+.social_item:hover {
+  color: var(--text-color);
+  background-color: var(--alert-text-color);
 }
-.social_icon{
-width: 20px;
-height: 20px;
-fill: currentColor;
+.social_icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
 .footer {
   padding-top: 10px;
@@ -309,12 +346,11 @@ fill: currentColor;
   background-color: #056857;
 }
 
-.footer_button_icon{
-fill: blue;
-height: 22px;
-width: 22px;
+.footer_button_icon {
+  fill: blue;
+  height: 22px;
+  width: 22px;
 }
 .footer_button:hover .footer_button_icon {
-fill: white;
+  fill: white;
 }
-
